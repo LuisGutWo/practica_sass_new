@@ -14,6 +14,7 @@ $font-family-base: 'Lato', sans-serif;
 // 2. Include any default variable overrides here
 $primary: #1f0f54;
 $secondary: #8758FF;
+$warning: #F5F5F5;
 $text-light: #5e6163;
 
 
@@ -42,26 +43,42 @@ $text-light: #5e6163;
 // 8. Add additional custom code here
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+
+//css property
 //navbar 
 .navbar {
-    margin: 0px;
-    height: 3rem;
+    padding: 0 4px 0 4px;
+    overflow: hidden;
 
     .container-fluid {
-        display: flex;
-        justify-content: space-evenly;
-        min-width: fit-content;
-        gap: 0.5rem;
-        padding-left: 10%;
 
+        // display: flex;
+        // justify-content: space-between;
+        .navbar-brand-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
 
-        img {
-            max-width: 2%;
-            height: auto;
-            margin-left: 5px;
+            .navbar-brand {
+                margin-right: 5px;
+                padding-bottom: 12px;
+            }
+
+            img {
+                width: 1.3rem;
+                height: auto;
+            }
+        }
+
+        .navbar-toggler {
+            color: #F5F5F5 !important;
+            padding: 4px;
+            border: 0px;
+
 
         }
     }
+
 }
 
 .bg-hero {
@@ -70,14 +87,15 @@ $text-light: #5e6163;
     justify-content: center;
     align-items: center;
     gap: 60px;
-    min-height: 90vh;
+    min-height: 100vh;
     background-image: url(/assets/img/bg-hero.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 
     h1 {
-        font-size: 4rem;
+        font-size: 2.5rem;
+        font-weight: lighter;
     }
 
 }
