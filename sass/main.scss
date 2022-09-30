@@ -1,6 +1,5 @@
 // Fonts used 
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 $font-family-base: 'Lato', sans-serif;
 
 
@@ -12,7 +11,7 @@ $font-family-base: 'Lato', sans-serif;
 @import "../node_modules/bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
-$primary: #1f0f54;
+$primary: #231356;
 $secondary: #8758FF;
 $warning: #F5F5F5;
 $text-light: #5e6163;
@@ -47,6 +46,7 @@ $text-light: #5e6163;
 //css property
 //navbar 
 .navbar {
+    min-height: fit-content;
     padding: 0 4px 0 4px;
     overflow: hidden;
 
@@ -81,21 +81,34 @@ $text-light: #5e6163;
 
 }
 
+// Hero section
 .bg-hero {
     display: flex;
     flex-direction: column;
+    gap: 0;
     justify-content: center;
     align-items: center;
-    gap: 60px;
-    min-height: 100vh;
+    height: calc(100vh - 56px);
     background-image: url(/assets/img/bg-hero.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
     h1 {
-        font-size: 2.5rem;
-        font-weight: lighter;
+        font-size: 240%;
+        margin-bottom: 40px;
     }
 
 }
+
+//main section
+main {
+    .lead {
+        font-size: 1.19rem;
+        font-weight: 300;
+    }
+}
+
+// card section
+
+
