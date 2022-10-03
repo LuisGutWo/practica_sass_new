@@ -1,3 +1,3 @@
 # Landing Page Refuerzo Sass
-Trabajo realizado como refuerzo Sass al finalizar dicho modulo.
-Landing Page realizada en su amyoria con Bootstrap y css.
+Trabajo realizado como refuerzo al modulo Sass.
+En este landing Page use en su mayoria clases de Bootstrap y scss.
